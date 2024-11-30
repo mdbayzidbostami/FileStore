@@ -79,8 +79,12 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup([
-            [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
-             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')]
+            [InlineKeyboardButton("• ᴛɢ ᴄʜᴀɴɴᴇʟ", url='https://t.me/+BZeBYiRqP0cwMDQ9'),
+             InlineKeyboardButton("ᴛɢ ɢʀᴏᴜᴘ •", url='https://t.me/+WwkioMYoHYMyYzc9')]
+             [InlineKeyboardButton("• ʏᴏᴜᴛᴜʙᴇ", url='https://youtube.com/@suryag10'),
+             InlineKeyboardButton("ɪɴsᴛᴀɢʀᴀᴍ •", url='https://www.instagram.com/surya_gamer19')]
+             [InlineKeyboardButton("• ᴏᴡɴᴇʀ", url='https://t.me/SURYAG10'),
+             InlineKeyboardButton("ᴀᴅᴍɪɴ •", url='https://t.me/xerox_bayzid')]
         ])
         await message.reply_photo(
             photo= START_PIC,
@@ -112,7 +116,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
-            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink2),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ •", url=client.invitelink2),
         ]
     ]
     try:
